@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dcsignup" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".menu_bot"
+            android:label="@string/title_activity_menu_bot" >
+        </activity>
+        <activity
+            android:name=".menuprofile"
+            android:label="@string/title_activity_menuprofile" >
+        </activity>
+        <activity
+            android:name=".menunav"
+            android:label="@string/title_activity_menunav" >
+        </activity>
+        <activity android:name=".manhinh5" />
+        <activity android:name=".manhinh4" />
+        <activity android:name=".manhinh3" />
+        <activity android:name=".manhinh2" />
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

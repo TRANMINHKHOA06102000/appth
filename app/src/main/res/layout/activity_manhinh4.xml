@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dcsignup.manhinh4">
+    <RelativeLayout
+        android:id="@+id/song"
+        android:background="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:id="@+id/ds"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="30dp"
+            android:textColor="#090909"
+            android:textStyle="bold"
+            android:text="Danh Sách Nhạc"/>
+        <TextView
+            android:layout_below="@id/ds"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Gợi ý "
+            android:textColor="#090909"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonGoTo"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/button"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="Phát"
+            />
+    </LinearLayout>
+    <ListView
+        android:layout_below="@id/song"
+        android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="650dp" />
+    <LinearLayout
+        android:layout_below="@+id/ListView"
+        android:background="#EEF1EE"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left"
+            />
+        <ImageView
+            android:background="#FFEB3B"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_list_alt"
+            />
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_account_circle"
+            />
+    </LinearLayout>
+</RelativeLayout>
+
+
